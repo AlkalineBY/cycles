@@ -7,13 +7,16 @@ const number = (a) => {
 };
 
 const minNumberWhile = (b, n) => {
-    console.log('Цикл с конструкцией "while" (меньшее число):')
     let currentNumber = 1;
-    if (b >= n)
+
+    console.log('Цикл с конструкцией "while" (меньшее число):');
+
+    if (b >= n) {
         while (currentNumber <= n) {
             console.log(currentNumber);
             currentNumber += 1;
-        } else {
+        }
+    } else {
         while (currentNumber <= b) {
             console.log(currentNumber);
             currentNumber += 1;
@@ -22,14 +25,16 @@ const minNumberWhile = (b, n) => {
 };
 
 const minNumberDo = (b, n) => {
-    console.log('Цикл с конструкцией "do...while" (меньшее число):')
     let currentNumber = 1;
-    if (b >= n)
+
+    console.log('Цикл с конструкцией "do...while" (меньшее число):');
+
+    if (b >= n) {
         do {
             console.log(currentNumber);
             currentNumber += 1;
         } while (currentNumber <= n);
-    else {
+    } else {
         do {
             console.log(currentNumber);
             currentNumber += 1;
@@ -39,6 +44,7 @@ const minNumberDo = (b, n) => {
 
 const minNumberFor = (b, n) => {
     console.log('Цикл с конструкцией "for" (меньшее число):');
+
     if (b >= n) {
         for (let currentNumber = 1; currentNumber <= n; currentNumber += 1) {
             console.log(currentNumber);
@@ -51,9 +57,11 @@ const minNumberFor = (b, n) => {
 };
 
 const maxNumberWhile = (b, n) => {
-    console.log('Цикл с конструкцией "while" (большее число):')
-    let currentNumber = 1;
     const maxNumber = b >= n ? b : n;
+    let currentNumber = 1;
+
+    console.log('Цикл с конструкцией "while" (большее число):');
+
     while (currentNumber <= maxNumber) {
         console.log(currentNumber);
         currentNumber += 1;
@@ -61,9 +69,11 @@ const maxNumberWhile = (b, n) => {
 };
 
 const maxNumberDo = (b, n) => {
-    console.log('Цикл с конструкцией "do...while" (большее число):');
-    let currentNumber = 1;
     const maxNumber = b >= n ? b : n;
+    let currentNumber = 1;
+
+    console.log('Цикл с конструкцией "do...while" (большее число):');
+
     do {
         console.log(currentNumber);
         currentNumber += 1;
@@ -71,16 +81,20 @@ const maxNumberDo = (b, n) => {
 };
 
 const maxNumberFor = (b, n) => {
-    console.log('Цикл с конструкцией "for" (большее число):')
     const maxNumber = b >= n ? b : n;
+
+    console.log('Цикл с конструкцией "for" (большее число):');
+
     for (let currentNumber = 1; currentNumber <= maxNumber; currentNumber += 1) {
         console.log(currentNumber);
     }
 };
 
 const multiNumberWhile = (N, M) => {
-    console.log('Цикл с конструкцией "while" (произведение):');
     let currentNumber = 1;
+
+    console.log('Цикл с конструкцией "while" (произведение):');
+
     while (currentNumber <= N) {
         console.log(currentNumber);
         let result = currentNumber * M;
@@ -92,8 +106,10 @@ const multiNumberWhile = (N, M) => {
 };
 
 const multiNumberDo = (N, M) => {
-    console.log('Цикл с конструкцией "do...while" (произведение):');
     let currentNumber = 1;
+
+    console.log('Цикл с конструкцией "do...while" (произведение):');
+
     do {
         console.log(currentNumber);
         let result = currentNumber * M;
@@ -107,6 +123,7 @@ const multiNumberDo = (N, M) => {
 
 const multiNumberFor = (N, M) => {
     console.log('Цикл с конструкцией "for" (произведение):');
+
     for (let currentNumber = 1; currentNumber <= N; currentNumber += 1) {
         console.log(currentNumber);
         let result = currentNumber * M;
